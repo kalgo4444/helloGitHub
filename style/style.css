@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Jersey10;
+    src: url('../fonts/Jersey10-Regular.ttf');
+}
+@font-face {
+    font-family: JetBrainsMono;
+    src: url('../fonts/JetBrainsMono-VariableFont_wght.ttf');
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainColor: #70F5FF;
+    --secondColor: #202020;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+    font-family: Jersey10;
+    color: var(--mainColor);
+}
+img{
+    max-width: 100%;
+    min-height: 100%;
+}
+h1, h2, h3{
+    color: var(--mainColor);
+    font-family: Jersey10;
+}
+
+p{
+    color: white;
+    font-family: JetBrainsMono;
+}
+li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    background: black;
+    height: 700px;
+    padding-top: 20px
+}
+.navbar{
+    background: var(--secondColor);
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar a{
+    font-size: 36px;
+}
+.navbar a:hover{
+    color: #72c7ff;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 51px;
+}
+.heroContext .heroImg{
+    width: 50%;
+}
+.heroContext{
+    max-width: 518px;
+}
+.heroContext h1{
+    font-size: 64px;
+}
+.heroContext p{
+    font-size: 20px;
+}
+.heroImg img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+.heroImg img:hover{
+    box-shadow: #70F5FF 0px 10px 36px 0px, #70F5FF 0px 0px 0px 1px;
+}
+
+
+.aboutme h2{
+    font-size: 128px;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+.aboutmeCards{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.aboutmeCards .card {
+    max-width: 575px;
+    width: 100%;
+    background-color: var(--secondColor);
+    border-radius: 50px;
+    padding: 66px 38px 20px;
+}
+.aboutmeCards .card:hover{
+    box-shadow: #70F5FF 0px 19px 38px, #70F5FF 0px 15px 12px;
+}
+.aboutmeCards .card .cardTitle{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+.aboutmeCards .cardDesc p{
+    margin-bottom: 33px;
+    font-size: 24px;
+}
+.cardMainTitle{
+    font-size: 30px;
+    color: white;
+    font-family: JetBrainsMono;
+    margin-bottom: 33px;
+}
+
+
+.workBox{
+    max-width: 1440px;
+    width: 100%;
+    height: 693px;
+    margin: 0 auto;
+    background: black;
+    margin-top: 120px;
+    border-radius: 50px;
+}
+.workTitle{
+    font-size: 96px;
+    text-align: center;
+    padding-top: 125px;
+}
+.workContext{
+    display: flex;
+    gap: 220px;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.workImg .workDesc{
+    width: 50%;
+}
+.workImg img{
+    margin: 0 auto;
+}
+.workDesc{
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksBox{
+    margin-top: 105px;
+    background: black;
+    height: 560px;
+}
+.linkTitle{
+    font-size: 96px;
+    text-align: center;
+    padding-top: 60px;
+}
+.linkCollaction{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.linkCollaction span{
+    font-size: 32px;
+}
+.divlink1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.links a{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.links a:hover{
+    opacity: 70%;
+}
